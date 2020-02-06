@@ -5,11 +5,11 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    -location: apache_stop.sh
+    - location: test/apache_stop.sh
       timeout: 10
       runas: root
   AfterInstall:
-    -location: afterinstall.sh
+    - location: afterinstall.sh
       timeout: 10
       runas: root
   ApplicationStart:
